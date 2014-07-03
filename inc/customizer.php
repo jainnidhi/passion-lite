@@ -90,10 +90,6 @@ function passion_customize_register($wp_customize) {
             'red' => __('Red', 'passion'),
             'green' => __('Green', 'passion'),
             'yellow' => __('Yellow', 'passion'),
-            'purple' => __('Purple', 'passion'),
-            'orange' => __('Orange', 'passion'),
-            'brown' => __('Brown', 'passion'),
-            'pink' => __('Pink', 'passion'),
         ),
     ));
 
@@ -1388,7 +1384,7 @@ function passion_sanitize_checkbox($input) {
  */
 
 function passion_sanitize_color_scheme_option($colorscheme_option) {
-    if (!in_array($colorscheme_option, array('blue', 'red', 'green', 'yellow', 'purple', 'orange', 'brown', 'pink'))) {
+    if (!in_array($colorscheme_option, array('blue', 'red', 'green', 'yellow'))) {
         $colorscheme_option = 'blue';
     }
 
