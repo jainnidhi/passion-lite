@@ -1,0 +1,1162 @@
+/*
+Theme Name: Passion
+Theme URI: http://ideaboxthemes.com/themes/passion-wordpress-theme/
+Author: IdeaBox Themes
+Author URI: http://ideaboxthemes.com/
+Description: Passion is a beautiful, easy to use, mobile responsive, one page, multipurpose theme. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, gray, dark, blue, red, pink, orange, green, brown, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: Passion
+*/
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+textarea{width:100%;}
+/* ==========================================================================
+   Column & Row Setup
+   ========================================================================== */
+
+.col {
+    float:right;
+    margin: 0 1.6% 0 auto;
+}
+
+/* Remove the margin on the first column. Works on all browsers incl. IE7+ */
+.col:first-child { margin-right: 0;
+                   margin-left:auto;}
+
+
+/* ==========================================================================
+   Basic page styles
+   ========================================================================== */
+
+body { 
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+ul{
+    padding-right:0px;
+}
+
+
+.alignleft {
+    float: right;
+    margin: 0 0px 16px 20px;
+}
+
+.alignright {
+    float: left;
+    margin: 0 20px 16px 0px;
+}
+
+
+blockquote {
+    border-right: 5px solid #666;
+    border-left:0;
+    margin: 0 20px 18px 0px;
+    padding: 0 16px 0 0px;
+}
+
+blockquote.pull-right {
+    border-right: 0 none;
+    border-left: 5px solid #666;
+    margin: 0 0px 18px 20px;
+    padding: 0 10px 0 16px;
+}
+
+blockquote.pull-right p, blockquote.pull-right small {
+    text-align: left;
+}
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+
+/* ==========================================================================
+   Site specific styles
+   ========================================================================== */
+
+.header-extras{
+    text-align:left;
+}
+
+.header-extras .social-links{
+    float:left;
+}
+
+#reviewslider .featured-content:after {
+    right: 49%;
+    left:auto;
+}
+
+.testimonial-area .slide-nav .testimonials-list > div .avatar-link.active:after {
+    right: 22%;
+    left:auto;
+}
+
+.home-contact-form{
+    padding-left:30px;
+    pading-right:0;
+}
+
+
+.contact-details #email:before{
+    margin-left:10px;
+    margin-right:auto;
+}
+
+.contact-details #phone:before{
+    margin-left:10px;
+    margin-right:auto;
+}
+
+.contact-details #address:before{
+    margin-left:10px;
+    margin-right:auto;
+}
+
+/* Home CTA Area */
+
+
+.slider-wrapper .featured-content{
+    left: auto;
+}
+
+.passion-front-page .site-content article {
+    margin-left: 0;
+    margin-right:auto;
+}
+
+
+/* ================================
+* Featured posts on front page 
+================================== */
+
+.blog .post-meta-date:before,
+.single .post-meta-date:before,
+.archive .post-meta-date:before{
+    margin-right:85px;
+    margin-left:auto;
+}
+
+.post-meta-date:before{
+    margin: 24px 69px -8px auto;
+}
+
+.site-content #post-content{
+    margin-right:95px;
+    margin-left:auto;
+}
+
+.blog .blog-content{
+    right: 25%;
+    left:auto;
+}
+.site-content .image {
+    float: right;
+    margin-left: 20px;
+    margin-right:auto;
+}
+
+.blog .site-content article .text,
+.single-post .site-content article .text,
+.archive .site-content article .text{
+    text-align:right;
+}
+#featured-posts .hentry
+{
+    margin-right:0px;
+    margin-left:auto;
+}
+.home-featured-post:nth-of-type(3n+1) {
+    margin-right: 0;
+    mrgin-left:auto;
+}
+
+.feature-more-link {
+    left: 0;
+    right:auto;
+}
+
+#featured-portfolio li:first-child{
+    margin-right:0;
+    margin-left:auto;
+}
+
+.home-featured-portfolio:nth-of-type(3n+1) {
+    margin-right: 0;
+    margin-left:auto;
+}
+
+.home-featured-portfolio span{
+    right: 115px;
+    left:auto;
+}
+
+.portfolio .portfolio-buttons{
+    right: 115px;
+    left:auto;
+}
+
+#featured-portfolio.flexslider .flex-prev{
+    right:32px;
+    left:auto;
+}
+#featured-portfolio.flexslider .flex-next{
+    left:35px;
+    right:auto;
+}
+#featured-portfolio.flexslider:hover .flex-prev{
+    right: 32px;
+    left:auto;
+}
+
+#featured-portfolio.flexslider:hover .flex-next{
+    left:35px;
+    right:auto;
+}
+
+.portfolio:nth-of-type(3n+1){
+    margin-right:0;
+    margin-left:auto;
+}
+
+.portfolio_category{
+    float:right;
+}
+
+.portfolio_category:before{
+    right: 95px;
+    left:auto;
+}
+
+.portfolio_category ul{
+    float:left;
+    margin-right:15px;
+    margin-left:auto;
+}
+
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+
+.main-content {
+    padding: 20px 20px 20px 30px;  
+}
+
+.comments-link {
+    float: left;
+}
+
+.hentry span.link{
+    right: 20%;
+    left:auto;
+}
+
+.hentry span.post_format{
+    right: 0;
+    left:auto;
+    float:left;
+}
+.site-content article {
+    margin-left: 20px;
+    margin-right:auto;
+}
+
+single-post .entry-meta{
+    padding-right:45px;
+    padding-left:0;
+}
+.single-post .post-tags .tag-text:before,
+.single-post .post-categories .category-text:before{
+    right:113px;
+    left:auto;
+}
+
+.post-tags .tag-text,
+.post-categories .category-text{
+    text-align: left;
+    margin-left:10px;
+    margin-right:auto;
+}
+
+.entry-header time,
+.entry-header address {
+    margin: 0 0px 0 20px;
+}
+
+.page-links .page-numbers {
+    margin-right: 10px;
+    margin-left:auto;
+}
+
+.entry-content li,
+.comment-content li {
+    margin: 0 28px 0 0px;
+}
+
+.comment-reply-title:before {
+    margin: 24px 162px -19px auto;
+}
+
+.author-avatar {
+    float: right;
+}
+
+.author-description {
+    float: left;
+}
+
+.social-meta a {
+    margin-left: 5px;
+    margin-right:auto;
+}
+
+.site-content #post-content,
+.single .site-content nav,
+.single-team-member .site-content nav,
+.single .author-details-meta,
+.single .commentlist,
+.single #respond form,
+.page #respond form{
+    margin-right:95px;
+    margin-left:auto;
+}
+
+#featured-posts hr{
+    margin: -20px 77px 20px 0px;
+}
+
+.blog hr, .single-post hr, .archive hr, .nav-meta hr, .author-info hr {
+    margin: -20px 100px 0 0px;
+}
+
+.single hr, .blog hr, .archive hr {
+    margin: -20px 120px 0 0px;
+}
+
+#comments hr {
+    margin: -30px 100px 50px 0px;
+}
+
+.comment-reply-title:before {
+    margin: 24px 108px -19px auto;
+}
+
+.comments-title, #reply-title p{
+    text-align:left;
+}
+.single-team-member span.team-member-role,
+.single .post-meta-date,
+.blog .post-meta-date,
+.single .nav-meta-title,
+.archive .post-meta-date,
+.single .author-meta-title {
+    text-align: left;
+}
+
+
+#featured-posts .post-meta-date{
+    text-align:right;
+}
+/* ==========================================================================
+   Post Formats
+   ========================================================================== */
+
+/* Status */
+.format-status .entry-content {
+    border-right: 5px solid #ddd;
+    border-left:0;
+    padding: 0 15px 0 0px;
+}
+
+/* Quote */
+.format-quote .entry-content blockquote:before {
+    right: 0;
+    left:auto;
+}
+
+.format-quote .entry-content blockquote {
+    margin-right: 40px;
+    margin-left:auto;
+}
+
+/* ==========================================================================
+   404 page
+   ========================================================================== */
+
+.pagination
+{
+    padding: 20px 40px 20px 30px;
+}
+
+/* ==========================================================================
+   Archives
+   ========================================================================== */
+
+.back-to-top {
+    left: 10px;
+    right:auto;
+}
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+.comments-title:before {
+    margin: 24px 392px -22px auto;
+}
+
+.comments-area article header img {
+    float: right;
+    margin-left:20px;
+    margi-right:auto;
+}
+
+.comments-area article header cite,
+.comments-area article header time {
+    margin-right: 0px;
+    margin-left:auto;
+}
+
+.comments-area article header h4 {
+    left: 0;
+    right:auto;
+}
+
+.comments-area li.bypostauthor cite span {
+    margin-right: 6px;
+    margin-left:auto;
+}
+
+.commentlist .reply{
+    text-align: left;
+}
+
+.commentlist .children {
+    margin-right: 48px;
+    margin-left:auto;
+}
+
+.commentlist {
+    padding-right: 0;
+}
+
+.single .commentlist{
+    margin-right:95px;
+    margin-left:auto;
+}
+
+/* Comment form */
+
+#respond h3#reply-title #cancel-comment-reply-link {
+    margin-right: 12px;
+    margin-left:auto;
+    float:left;
+}
+
+.single #respond form{
+    margin-right:163px;
+    margin-left:auto;
+}
+
+
+form label.error {
+    border-right: 4px solid #bb0504;
+    border-left:0;
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+.site-footer .col{
+    padding-left:15px;
+    padding-right:0;
+}
+
+.site-footer .col:last-child{
+    padding-left:0;
+}
+
+.smallprint {
+    float:right;
+}
+
+.footer-extras{
+    float:left;
+}
+
+.footer-wrap .social-links{
+    float:left;
+}
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar{
+    padding:20px 0px 0 30px;
+}
+
+
+.sidebar .widget ul {
+    padding:0 20px 20px 0px; 
+}
+
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+
+.site-footer li:before{
+    float: right;
+}
+
+.site-footer li:hover{
+    padding-right:20px !important;
+    padding-left:0;
+}
+
+.widget-area ul {
+    padding-right: 0;
+}
+
+.widget select {
+    margin-right: 1px;
+    margin-left:auto;
+}
+
+.widget-area .widget ul ul {
+    margin-right: 12px;
+    margin-left:auto;
+}
+
+.widget_recent_entries .post-date,
+.widget_rss .rss-date {
+    margin-right: 12px;
+    margin-left:auto;
+}
+
+#wp-calendar caption {
+    text-align: right;
+}
+
+
+#wp-calendar #next {
+    padding-left: 24px;
+    padding-right:0;
+    text-align: left;
+}
+
+.widget_twitter .timesince {
+    text-align: left;
+}
+
+
+/* ==========================================================================
+   Content Navigation
+   ========================================================================== */
+
+.nav-previous,
+.previous-image {
+    float: right;
+}
+
+.nav-next,
+.next-image {
+    float: left;
+    text-align: left;
+}
+
+.nav-single + .comments-area,
+#comment-nav-above {
+    margin: 48px 0px 48px 48px;
+}
+
+.page-numbers li {
+    margin-left:5px;
+    margin-right:au;
+}
+
+/* ==========================================================================
+   Main Navigation
+   ========================================================================== */
+
+.menu{
+    float:left;
+}
+
+.main-navigation {
+    text-align: right;
+}
+
+.main-navigation li {
+    float: right;
+}
+
+.main-navigation ul ul {
+    right: 0;
+    left:auto;
+}
+
+
+.main-navigation ul ul ul {
+    right: 100%;
+    left:auto;
+}
+
+
+/* ==========================================================================
+   Social Links Navigation - Intelligence overloaded. Thanks to Justin Tadlock 
+   ========================================================================== */
+
+.screen-reader-text {
+    right:     -9999em;
+    left:auto;
+}
+
+
+.social-links ul li {
+    margin-left:5px;
+    margin-right:auto;
+}
+
+/* ==========================================================================
+   IdeaBox Social Icons
+   ========================================================================== */
+
+.ideabox-social-icons ul li {
+    float: right;
+}
+
+
+/*
+    Mobile Menu Core Style
+*/
+
+.slicknav_menu  .slicknav_menutxt {float: right; }
+.slicknav_menu .slicknav_icon { float: left; margin: -0.4em 0.438em 0em 0; }
+.slicknav_nav .slicknav_arrow { margin: 0 0.4em 0 0; }
+/* 
+    User Default Style
+    Change the following styles to modify the appearance of the menu.
+*/
+
+
+.slicknav_nav ul {
+    margin:0 20px 0 0px;
+}
+
+.slicknav_nav .slicknav_txtnode {
+    margin-right:15px;
+    margin-left:auto;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/*  Breakpoints are set based on the design, not based on device sizes */
+
+
+@media only screen and (max-width: 800px) {
+
+    header .grid_7_of_12 {
+        margin-right: 0;
+        margin-left:auto;
+    }
+
+    .main-navigation .nav-menu > li:first-child {
+        margin-right: 0;
+        margin-left:auto;
+    }
+    .social-media-icons {
+        text-align: right;
+    }
+    .social-media-icons li {
+        margin: 0.1em 0 0 0.5em;
+    }
+
+    .home-sidebar .col:nth-of-type(2n+1){
+        margin-right:0px;
+        margin-left:auto;
+    }
+
+    .home-featured-post:nth-of-type(2n+1){
+        margin-right:0 !important;
+        margin-left:auto;
+    }
+    .home-featured-post:nth-of-type(3n+1){
+        margin-right:1.6%;
+        margin-left:auto;
+    }
+
+}
+
+/*  Go full Width at less than 650px */
+@media only screen and (max-width: 650px) {
+
+    .main-small-navigation .nav-menu ul {
+        padding-right: 16px;
+        padding-left:0;
+    }
+
+    .home-featured-post .featured-post-content,
+    #featured-posts .wp-post-image{
+        margin-left:0;
+        margin-right:auto;
+    }
+
+    .slider-wrapper .featured-content{
+        left:0;
+        right:auto;
+    }
+
+}
+
+
+/*  Adjust the menu at less than 520px */
+@media only screen and (max-width: 520px) {
+
+    .main-navigation ul ul li ul {
+        right: 0;
+        left:auto;
+    }
+
+    .single #respond form,
+    .single .commentlist,
+    .single .site-content nav,
+    .site-content #post-content{
+        margin-right:0;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .author-description {
+        float: right;
+    }
+}
+
+
+/* ==========================================================================
+   Non-semantic helper classes wrom HTML5 Boilerplate
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { text-align: right;}
+
+
+/* RTL for woocommerce */
+
+
+.site-header .cart-contents .count {
+    margin-right: .618em;
+    margin-left:auto;
+}
+.site-header .cart-contents:after {
+    margin-right: .618em;
+    margin-left:auto;
+    text-align: left;
+    float: left;
+}
+
+.star-rating:before {
+    float: right;
+    right: 0;
+    left:auto;
+}
+.star-rating span {
+    float: right;
+    right: 0;
+    left:auto;
+}
+.star-rating span:before {
+    right: 0;
+    left:auto;
+}
+
+p.stars a {
+    margin-left: 10px;
+    margin-right:auto;
+}
+
+p.stars a.star-1:after,
+p.stars a.star-2:after,
+p.stars a.star-3:after,
+p.stars a.star-4:after,
+p.stars a.star-5:after {
+    left: 10px;
+    right:auto;
+}
+
+.widget .product_list_widget li img {
+    float: left;
+}
+
+.widget_layered_nav ul li .count {
+    float: left;
+}
+
+.widget_layered_nav ul li.chosen a:before {
+    margin-left: .618em;
+    margin-right:auto;
+}
+
+.widget_product_categories ul li .count {
+    float: left;
+}
+
+.widget_login p:nth-child(3) a {
+    margin-right: 1em;
+    margin-left:auto;
+}
+
+.widget_price_filter .price_slider_amount {
+    text-align: left;
+}
+.widget_price_filter .price_slider_amount .button {
+    float: right;
+}
+.widget_price_filter .ui-slider {
+    text-align: right;
+}
+
+.widget_price_filter .ui-slider .ui-slider-handle:last-child {
+    margin-right: -1em;
+    margin-left:auto;
+}
+
+.widget_price_filter .ui-slider-horizontal .ui-slider-range-min {
+    right: -1px;
+    left:auto;
+}
+.widget_price_filter .ui-slider-horizontal .ui-slider-range-max {
+    left: -1px;
+    right:auto;
+}
+
+.woocommerce_message:before,
+.woocommerce_info:before,
+.woocommerce_error:before,
+.woocommerce-message:before,
+.woocommerce-info:before,
+.woocommerce-error:before {
+    margin-left: .618em;
+    margin-right:auto;
+    right: 1em;
+    left:auto;
+}
+.woocommerce_message .button,
+.woocommerce_info .button,
+.woocommerce_error .button,
+.woocommerce-message .button,
+.woocommerce-info .button,
+.woocommerce-error .button {
+    float: left;
+    margin-right: 1em;
+    margin-left:auto;
+}
+
+ul.woocommerce-error,
+ul.woocommerce_error {
+    margin-right: 0 !important;
+    margin-left:auto;
+}
+.stock.out-of-stock:before,
+.stock.in-stock:before {
+    margin-left: .618em;
+    margin-right:auto;
+}
+
+.onsale {
+    left: -2.618em;
+    right:auto;
+}
+.quantity {
+    float: right;
+}
+
+.quantity .number {
+    float: right;
+}
+.quantity .plus,
+.quantity .minus {
+    float: left;
+}
+
+ul.products li.product {
+    float: right;
+}
+
+ul.products li.product:nth-child(2n) {
+    float: left;
+}
+
+ul.products li.product .star-rating {
+    right:30px;
+    left:auto;
+}
+
+ul.products li.product .button.loading:after {
+    margin-right: .618em;
+    margin-left:auto;
+    text-align: left;
+}
+ul.products li.product .button.added:after {
+    margin-right: .618em;
+    margin-left:auto;
+    text-align: left;
+}
+.woocommerce-result-count,
+.woocommerce_ordering,
+.woocommerce-ordering {
+    float: right;
+}
+
+.woocommerce-ordering {
+    float: left;
+    text-align: left;
+}
+
+.single-product .product .onsale {
+    right: 0;
+    left:auto;
+}
+
+.single-product .quantity {
+    margin: 0 0 0 1em;
+}
+
+.single-product .thumbnails a {
+    margin-left: 3.8%;
+    margin-right:auto;
+    float: right;
+}
+.single-product .thumbnails a.last {
+    margin-left: 0;
+    margin-right:auto;
+}
+
+.single-product ul.products li.product{
+    margin-left:3.85%;
+    margin-right:auto;
+}
+
+.shipping_calculator h2 a:before {
+    margin-left: .618em;
+    margin-right:auto;
+}
+
+a.reset_variations:before {
+    margin-left: .618em;
+    margin-right:auto;
+}
+
+ul.order_details li {
+    float: right;
+    border-left: 1px solid #dcdcdc;
+    border-right:0;
+}
+
+ul.digital-downloads li .count {
+    float: left;
+}
+ul.digital-downloads li a:before {
+    margin-left: .618em;
+    margin-rigt:auto;
+}
+
+.backorder_notification:before {
+    margin-left: .618em;
+    margin-right:auto;
+}
+
+dl.variation dt {
+    float: right;
+    clear: right;
+    margin-right: .236em;
+}
+
+table.cart th {
+    text-align: right;
+}
+table.cart td {
+    text-align: right;
+}
+
+.cross-sells ul.products {
+    margin-right: 0;
+    margin-left:auto;
+}
+
+#reviews .comment .avatar {
+    float: right;
+    margin: 0 0 0 1.387em;
+}
+
+#reviews .comment .star-rating {
+    left: 20px;
+    right:auto;
+}
+
+div.pp_woocommerce #respond #commentform .comment-form-author,
+div.pp_woocommerce #respond #commentform .comment-form-email,
+div.pp_woocommerce #respond #commentform .comment-form-url {
+    margin-left: 0;
+    margin-right:auto;
+}
+div.pp_woocommerce #respond #commentform .comment-form-author label,
+div.pp_woocommerce #respond #commentform .comment-form-email label,
+div.pp_woocommerce #respond #commentform .comment-form-url label,
+div.pp_woocommerce #respond #commentform .comment-form-author .required,
+div.pp_woocommerce #respond #commentform .comment-form-email .required,
+div.pp_woocommerce #respond #commentform .comment-form-url .required {
+    float: right;
+}
+
+#payment .payment_methods li {
+    margin-right: 0;
+    margin-left:auto;
+}
+#payment .payment_methods li img {
+    float: left;
+}
+
+#payment .payment_methods li label {
+    margin-right: .618em;
+    margin-left:auto;
+}
+
+#payment .payment_methods li .payment_box fieldset label {
+    margin-right: 0;
+    margin-left:auto;
+}
+
+#payment .payment_methods li .payment_box fieldset .form-row-first select:nth-child(2n) {
+    float: left;
+}
+
+#payment .payment_methods li .payment_box fieldset .help {
+    float: left;
+}
+
+.woocommerce_tabs ul.tabs li,
+.woocommerce-tabs ul.tabs li {
+    margin: 0 0 0 .327em;
+}
+
+/* ==========================================================================
+   Woo Commerce Product 
+   ========================================================================== */
+
+.woocommerce .cart-collaterals .cart_totals{
+    text-align:right;
+}
+
+.woocommerce .page-numbers li{
+    margin-left:10px;
+    margin-right:auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .col2-set .col-1 {
+        float: right;
+    }
+    .col2-set .col-2 {
+        float: left;
+    }
+    .form-row {
+        float: right;
+    }
+
+    .form-row-first {
+        clear: right;
+    }
+    .form-row-last {
+        float: left;
+    }
+    .form-row-wide {
+        float: right;
+    }
+
+    header.title h1,
+    header.title h2,
+    header.title h3,
+    header.title h4,
+    header.title h5 {
+        float: right;
+    }
+    header.title a.edit {
+        float: left;
+    }
+    header.title a.edit:before {
+        margin-left: .618em;
+        margin-right:auto;
+    }
+    ul.products li.product {
+        margin-left:0;
+        margin-right:auto;
+    }
+    ul.products li.product:nth-child(2n) {
+        float: right;
+    }
+
+    ul.products li.product.last {
+        margin-left: 0;
+        margin-right:auto;
+    }
+
+    .single-product .images {
+        float: right;
+    }
+    .single-product .summary {
+        float: left;
+    }
+
+    table.cart .actions {
+        text-align: left;
+    }
+    table.cart .actions .coupon {
+        float: right;
+        text-align: right;
+    }
+
+    table.cart .actions .coupon label {
+        margin: 0 0 0 1em;
+    }
+    table.cart .actions .coupon input.input-text {
+        margin-left: 2%;
+        margin-right:auto;
+    }
+
+    .cart-collaterals .cross-sells {
+        float: right;
+    }
+
+    .cart-collaterals .cart_totals,
+    .cart-collaterals .shipping_calculator {
+        float: left;
+        clear: left;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .single-product ul.products li.product{
+        margin-left:0;
+        margin-right:auto;
+    }
+}
+
