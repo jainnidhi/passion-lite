@@ -733,27 +733,6 @@ function passion_customize_register($wp_customize) {
         'priority' => 4,
     )));
 
-    $wp_customize->add_setting(
-            'passion_team_members_count', array(
-                'default' => '1',
-        'sanitize_callback' => 'passion_sanitize_team_member_count_option',
-            )
-    );
-
-    $wp_customize->add_control(
-            'passion_team_members_count', array(
-        'type' => 'select',
-        'label' => 'Team Members Count',
-        'section' => 'passion_team_settings',
-        'priority' => 10,
-        'choices' => array(
-            '1' => 'One',
-            '2' => 'Two',
-            '3' => 'Three',
-            '4' => 'Four',
-        ),
-            )
-    );
 
     // select number of posts for featured posts on front page
     $wp_customize->add_setting('passion_front_team_members_count', array(
@@ -1389,20 +1368,6 @@ function passion_sanitize_color_scheme_option($colorscheme_option) {
     }
 
     return $colorscheme_option;
-}
-
-/*
- * Sanitize Team Member Count options 
- * 
- * @since Passion 1.0
- */
-
-function passion_sanitize_team_member_count_option($grid_count) {
-    if (!in_array($grid_count, array('1', '2', '3', '4'))) {
-        $grid_count = '3';
-    }
-
-    return $grid_count;
 }
 
 /*
