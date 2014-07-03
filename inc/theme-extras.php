@@ -477,3 +477,14 @@ function passion_fields( $fields ) {
     );
     return $fields;
 }
+
+
+function passion_admin_notice(){
+    global $pagenow;
+    if ( $pagenow == 'themes.php' ) { ?>
+          <div class="updated">
+              <p>This theme comes with <a href="<?php echo admin_url('customize.php'); ?>">Live Theme Customizer</a> to configure settings and setup home page content. <br/> You can upgrade to <a href="http://ideaboxthemes.com/themes/passion-wordpress-theme/">Pro version</a> for more features like multiple slider images, testimonials, color schemes, support and upgrades.</p>
+         </div>
+   <?php  }
+}
+add_action('admin_notices', 'passion_admin_notice');
