@@ -22,13 +22,6 @@ include(get_stylesheet_directory() . '/inc/theme-updater-config.php');
 /* Include plugin activation file to install plugins */
 include get_template_directory() . '/inc/plugin-activation/plugin-details.php';
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- *
- * @since Passion 1.0
- */
-if ( ! isset( $content_width ) )
-	$content_width = 790; /* Default the embedded content width to 790px */
 
 
 /**
@@ -45,6 +38,15 @@ if ( ! isset( $content_width ) )
 if ( ! function_exists( 'passion_setup' ) ) {
 	function passion_setup() {
 		global $content_width;
+                
+                /**
+                * Set the content width based on the theme's design and stylesheet.
+                *
+                * @since Passion 1.0
+                */
+               if ( ! isset( $content_width ) )
+                       $content_width = 727; /* Default the embedded content width to 790px */
+
 
 		/**
 		 * Make theme available for translation
@@ -113,7 +115,7 @@ function passion_scripts_styles() {
         if (class_exists('woocommerce')) {
             wp_enqueue_style( 'passion-woocommerce', trailingslashit( get_template_directory_uri() ) . 'assets/css/passion-woocommerce.css' , array(), '1.0', 'all' );
         }
-       // wp_enqueue_style( 'flexslider', trailingslashit( get_template_directory_uri() ) . 'assets/css/flexslider.css' , array(), '1.0', 'all' );
+      
         
 	$fonts_url = 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Roboto+Slab:400,700';
 	if ( !empty( $fonts_url ) ) {
