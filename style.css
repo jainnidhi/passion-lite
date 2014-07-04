@@ -1020,21 +1020,21 @@ select {
     font-family:"FontAwesome";
     content:"\f0e0";
     margin-right:10px;
-    color:#009cee;
+    color:#fff;
 }
 
 .contact-details #phone:before{
     font-family:"FontAwesome";
     content:"\f095";
     margin-right:10px;
-    color:#009cee;
+    color:#fff;
 }
 
 .contact-details #address:before{
     font-family:"FontAwesome";
     content:"\f041";
     margin-right:10px;
-    color:#009cee;
+    color:#fff;
 }
 
 .contact-map{
@@ -3508,9 +3508,6 @@ img#wpstats {
 .passion-red .nav-previous a:hover,
 .passion-red .nav-next a:hover,
 .passion-red .contact-details .fa,
-.passion-red .contact-details #address:before,
-.passion-red .contact-details #phone:before,
-.passion-red .contact-details #email:before,
 .passion-red .client-name a,
 .passion-red .sidebar .widget li:before
 {
@@ -3579,9 +3576,6 @@ img#wpstats {
 .passion-green .nav-previous a:hover,
 .passion-green .nav-next a:hover,
 .passion-green .contact-details .fa,
-.passion-green .contact-details #address:before,
-.passion-green .contact-details #phone:before,
-.passion-green .contact-details #email:before,
 .passion-green .client-name a,
 .passion-green .sidebar .widget li:before
 {
@@ -3652,9 +3646,6 @@ img#wpstats {
 .passion-yellow .nav-previous a:hover,
 .passion-yellow .nav-next a:hover,
 .passion-yellow .contact-details .fa,
-.passion-yellow .contact-details #address:before,
-.passion-yellow .contact-details #phone:before,
-.passion-yellow .contact-details #email:before,
 .passion-yellow .client-name a,
 .passion-yellow .sidebar .widget li:before
 {
