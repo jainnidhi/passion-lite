@@ -19,7 +19,7 @@ get_header(); ?>
         <?php if ( get_theme_mod('blog_featured_image')) { ?>
 		<img src="<?php echo get_theme_mod('blog_featured_image'); ?>" />
 	<?php } else { ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider1.jpg" alt=""/>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" alt=""/>
         <?php  } ?>
                 <div class="blog-content">
                      <?php if ( get_theme_mod('blog_page_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('blog_page_title')); ?></h3>
