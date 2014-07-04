@@ -66,7 +66,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_one') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_one'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/keyboard.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" /></div>
                      <?php } ?>
 
 
@@ -91,7 +91,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_two') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_two'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fall.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature1.jpg" /></div>
                      <?php } ?>
 
 
@@ -117,7 +117,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_three') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_three'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/beach.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature2.jpg" /></div>
                      <?php } ?>
 
 
@@ -255,13 +255,13 @@ get_header();
       <div class="slide-nav">
           <div class="testimonials component effect-fade">
               <div class="testimonials-list">
-                  <div id="tslider1"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/client1.jpeg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider1"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/man1.jpg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                   
-                  <div id="tslider2"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/client2.jpeg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider2"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/girl1.jpg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                  
-                  <div id="tslider3"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/client3.jpeg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider3"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/man2.jpg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                   
-                  <div id="tslider4"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/client4.jpeg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider4"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_template_directory_uri(); ?>/assets/images/man3.jpg' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                
                </div>
           </div>

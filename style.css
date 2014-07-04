@@ -834,10 +834,12 @@ select {
 }
 .home-featured-team{
     margin-bottom:20px !important;
+    padding:10px;
 }
 .featured-team-content p{
     font-size:16px;
     margin-bottom:5px;
+    margin-top:10px;
 }
 .team-member-area h3{
     margin:0;
@@ -852,15 +854,6 @@ select {
 .members-wrap .featured-team-content{
     text-align:center;
     background:#fff;
-    margin:80px 20px 0;
-}
-
-.members-wrap img{
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: -80px;
 }
 
 .team-meta{
@@ -874,6 +867,7 @@ select {
 .team-meta li.twitter,
 .team-meta li.facebook{
     display:inline-block;
+    margin-right:10px;
 }
 
 .team-meta li a:before{
@@ -1101,7 +1095,7 @@ select {
 
 
 .slider-wrapper{
-    background-image:url('assets/images/slider1.jpg');
+    background-image:url('assets/images/tumblr.jpg');
     min-height:570px;
     background-attachment: fixed; 
     background-size: cover; 
@@ -1233,7 +1227,7 @@ select {
 ================================== */
 
 .testimonial-area{
-    background-image:url('assets/images/images.jpg');
+    background-image:url('assets/images/featured.jpg');
     background-attachment: fixed; 
     background-size: cover; 
     background-repeat: no-repeat; 

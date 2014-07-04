@@ -143,7 +143,7 @@ if (get_theme_mod('passion_front_team_members_check')) {
                         <div class="home-featured-team grid_4_of_12 col" id="member-one">
 
                             <div class="featured-team-content">
-                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" alt=""/>
+                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/team1.jpg" alt=""/>
                                    
                                         <h4 class="home-team-member-title">John</h4>
                                     <p class="team-member-role">
@@ -170,7 +170,7 @@ if (get_theme_mod('passion_front_team_members_check')) {
                         <div class="home-featured-team grid_4_of_12 col" id="member-two">
 
                             <div class="featured-team-content">
-                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" alt=""/>
+                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/team2.jpg" alt=""/>
                                    
                                         <h4 class="home-team-member-title">Johny</h4>
                                     <p class="team-member-role">Designer  </p>
@@ -195,7 +195,7 @@ if (get_theme_mod('passion_front_team_members_check')) {
                         <div class="home-featured-team grid_4_of_12 col" id="member-three">
 
                             <div class="featured-team-content">
-                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img3.jpg" alt=""/>
+                                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/team3.jpg" alt=""/>
                                    <h4 class="home-team-member-title">Bob</h4>
                                    <p class="team-member-role">
                                     Developer                                   

@@ -113,18 +113,26 @@ Passion utilises the following awesomeness:
 [jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation) which is dual licensed under the MIT license and GPL licenses
 [Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
 [Open Sans font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
-[Montserrat font](http://www.google.com/fonts/specimen/Montserrat), which is licensed under SIL Open Font License 1.1
+[Roboto Slab font](http://www.google.com/fonts/specimen/Roboto+Slab), which is licensed under Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
 [Flexslider] (https://github.com/woothemes/FlexSlider), by WooThemes, licensed under GPLv2 
-[SMINT] (http://www.outyear.co.uk/smint/), for one page navigation, licensed under MIT Creative Commons License http://opensource.org/licenses/mit-license.php
+[Animate.css] (https://github.com/daneden/animate.css), Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 [Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
 
-Feature Image 1: img1.jpg (http://pixabay.com/en/beach-beverage-caribbean-cocktail-84533/)
-Feature Image 2: img2.jpg (http://pixabay.com/en/keyboard-apple-input-keys-hardware-338513/)
-Feature Image 3: img3.jpg (http://pixabay.com/en/fall-autumn-tree-leaves-348316/)
-Feature Image 4: img4.jpg (http://pixabay.com/en/hot-air-balloon-balloon-colorful-4761/)
+Feature Image 1: img1.jpg (http://pixabay.com/en/home-office-workstation-office-336374/)
+Feature Image 2: feature1.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller) By Drew Patrick Miller
+Feature Image 3: feature2.jpg (http://unsplash.com/post/87343080194/download-by-alex-talmon) By Alex Talmon
 
-Slider Image 1: slider1.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)
-Slider Image 2: slider2.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+Portfolio Image 1: img4.jpg (http://unsplash.com/post/55904505955/download-by-art-wave-web-design) By Art Wave Web Design
+Portfolio Image 2: img5.jpg (http://unsplash.com/post/51493699530/download-by-alejandro-escamilla) By Alejandro Escamilla
+Portfolio Image 3: img6.jpg (http://unsplash.com/post/59630943411/download-caroline-gutman) Caroline Gutman
+
+Testimonial Image 1: man1.jpg (http://pixabay.com/en/man-boy-person-portrait-face-324103/)
+Team Image 1 and Testimonial Image 2: team1.jpg and girl1.jpg (http://pixabay.com/en/flower-child-hippie-flower-people-336658/)
+Team Image 2 and Testimonial Image 4: team2.jpg and man3.jpg (http://pixabay.com/en/model-boy-man-portrait-attractive-334735/)
+Team Image 3 and Testimonial Image 3: team3.jpg and man2.jpg (http://pixabay.com/en/portrait-man-male-head-face-298984/)
+
+Top Featured Image : tumblr.jpg (http://unsplash.com/post/71169983328/download-by-craig-garner)  By Craig Garner
+Testimonial Image : featured.jpg (http://unsplash.com/post/73463723711/download-by-kelly-sikkema) By Kelly Sikkema
 
 = 1.0 =
 - Initial version

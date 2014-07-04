@@ -99,7 +99,7 @@ if (get_theme_mod('passion_front_featured_portfolio_check')) {
                         <div class="home-featured-portfolio grid_4_of_12 col" id="portfolio-one">
                              <div class="featured-portfolio-content">
                                 <a href="#">
-                                    <img class="attachment-post_feature_thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/beach.jpg" alt=""/>
+                                    <img class="attachment-post_feature_thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" alt=""/>
                                     <span>
                                          <h4 class="home-featured-portfolio-title">Portfolio #1</h4>
                                         </span>
@@ -111,7 +111,7 @@ if (get_theme_mod('passion_front_featured_portfolio_check')) {
                         <div class="home-featured-portfolio grid_4_of_12 col" id="portfolio-two">
                             <div class="featured-portfolio-content">
                                 <a href="#">
-                                    <img class="attachment-post_feature_thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/keyboard.jpg" alt=""/>
+                                    <img class="attachment-post_feature_thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/img5.jpg" alt=""/>
                                     <span>
                                          <h4 class="home-featured-portfolio-title">Portfolio #2</h4>
                                         </span>
@@ -122,7 +122,7 @@ if (get_theme_mod('passion_front_featured_portfolio_check')) {
                         <div class="home-featured-portfolio grid_4_of_12 col" id="portfolio-three">
                             <div class="featured-portfolio-content">
                                 <a href="#">
-                                    <img class="attachment-post_feature_thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/fall.jpg" alt=""/>
+                                    <img class="attachment-post_feature_thumb" src="<?php echo get_template_directory_uri(); ?>/assets/images/img6.jpg" alt=""/>
                                     <span>
                                          <h4 class="home-featured-portfolio-title">Portfolio #3</h4>
                                         </span>
