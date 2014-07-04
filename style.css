@@ -824,31 +824,35 @@ select {
     color:#fff;
 }
 
+.team-member-area p {
+    font-size: 20px;
+    margin: 20px 0;
+}
 .team-member-title p{
     color:#fff;
 }
 
-.team-member-area p{
-    font-size:20px;
-    margin:20px 0;
-}
 .home-featured-team{
     margin-bottom:20px !important;
     padding:10px;
 }
-.featured-team-content p{
+.featured-team-content p {
     font-size:16px;
-    margin-bottom:5px;
-    margin-top:10px;
 }
 .team-member-area h3{
     margin:0;
+}
+.home-team-member-title {
+    margin: 25px 0 0; 
+}
+.featured-team-content .team-member-role {
+    margin: 5px 0 15px; 
 }
 
 .members-wrap{
     max-width:1140px;
     margin:0 auto;
-    padding:50px 0;
+    padding:0 0 50px 0;
 }
 
 .members-wrap .featured-team-content{
@@ -858,16 +862,16 @@ select {
 
 .team-meta{
     text-align:center;
+    padding-bottom: 20px; 
 }
 
 .team-meta li{
-    margin-bottom:10px;
+    margin: 0 2px;
 }
 
 .team-meta li.twitter,
 .team-meta li.facebook{
     display:inline-block;
-    margin-right:10px;
 }
 
 .team-meta li a:before{
@@ -880,6 +884,12 @@ select {
     background:#fff;
     border:1px solid #111;
 }
+
+.team-meta li:hover a:before{
+    background:#111;
+    color:#fff;
+}
+
 .team-meta li a[href*="facebook.com"]::before {
     content: '\f09a';
 }
@@ -2693,7 +2703,8 @@ div.gform_wrapper .ginput_complex label {
 }
 
 .footer-wrap{
-    background:#fff;
+    background:#eee;
+    border-top: solid 3px #111;
 }
 
 .footer-extras{
@@ -2707,6 +2718,10 @@ div.gform_wrapper .ginput_complex label {
 
 .footer-extras .main-navigation a{
     color:#111;
+}
+
+.footer-extras .footer-wrap-menu{
+    float:right;
 }
 
 .footer-wrap .social-links{
