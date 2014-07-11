@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single portfolio items.
+ * The Template for displaying all single team member content.
  *
  * @package Passion
  * @since Passion 1.0

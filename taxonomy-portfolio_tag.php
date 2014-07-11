@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * A custom portfolio category page template to display portfolio grid
+ * A custom portfolio tag page template to display portfolio tag archives
  * Requires Portfolio Custom Post Type plugin to be activated
  * 
  * @package : Passion
