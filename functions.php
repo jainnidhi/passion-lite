@@ -269,7 +269,7 @@ add_filter( 'the_content_more_link', 'passion_remove_more_jump_link' );
  * @return string The 'Read more' link
  */
 function passion_continue_reading_link() {
-	return '&hellip;<p><a class="more-link" href="'. esc_url( get_permalink() ) . '" title="' . esc_html__( 'Read more', 'passion' ) . ' &lsquo;' . get_the_title() . '&rsquo;">' . wp_kses( __( 'Read more ', 'passion' ), array( 'span' => array( 
+	return '&hellip;<p><a class="more-link" href="'. esc_url( get_permalink() ) . '" title="' . esc_html__( 'Read more', 'passion' ) . ' &lsquo;' . esc_attr(get_the_title()) . '&rsquo;">' . wp_kses( __( 'Read more ', 'passion' ), array( 'span' => array( 
 			'class' => array() ) ) ) . '</a></p>';
 }
 
