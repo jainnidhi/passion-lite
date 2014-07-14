@@ -289,25 +289,6 @@ add_filter( 'excerpt_more', 'passion_auto_excerpt_more' );
 
 
 
-/*
- * 
- * Set excerpt length for post on front page
- * and post excerpts on rest of the pages.
- * 
- */
-function passion_excerpt_length($length) {
-    global $post;
-    if ($post->post_type == 'post') {
-        return 20;
-    }
-   
-    else {
-        return 50;
-    }
-}
-add_filter('excerpt_length', 'passion_excerpt_length');
-
-
 /**
  * Add Filter to allow Shortcodes to work in the Sidebar
  *
