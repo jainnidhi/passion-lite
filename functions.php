@@ -125,6 +125,7 @@ function passion_scripts_styles() {
         wp_enqueue_script('jquery'); 
         wp_enqueue_script('passion-slider', get_template_directory_uri() . '/assets/js/jquery.flexslider-min.js', array('jquery'));
 	wp_enqueue_script( 'passion-slicknav', get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js' );
+        wp_enqueue_script('mixitup', get_template_directory_uri() . '/assets/js/jquery.mixitup.js', array('jquery'));
         wp_enqueue_script('passion-custom-scripts', get_template_directory_uri() . '/assets/js/custom-scripts.js', array(), '1.0', 'all', false);
      
 	// Adds JavaScript to pages with the comment form to support sites with threaded comments (when in use)

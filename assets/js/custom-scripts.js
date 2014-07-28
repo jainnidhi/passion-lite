@@ -47,7 +47,11 @@ jQuery(document).ready(function() {
         event.preventDefault();
         jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
-    })
+    });
+    
+    jQuery(function() {
+        jQuery('.portfolio-wrap').mixItUp();
+    });
 });
 
 /* Trigger mobile responsive navigation powered by slicknav.js */

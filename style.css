@@ -1499,6 +1499,12 @@ select {
     font-size:20px;
 }
 
+/* Portfolio */
+
+.portfolio-area{
+    text-align:center;
+}
+
 .home-featured-portfolio{
     padding:10px;
     text-align:center;
@@ -1564,6 +1570,32 @@ select {
 }
 
 .home-featured-portfolio span h4{
+    color:#fff;
+}
+
+
+.home-featured-portfolio.mix {
+    display: none;
+}
+
+.portfolio-area #filters {
+    max-width: 1140px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.portfolio-area #filters li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.portfolio-area #filters li a {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
     color:#fff;
 }
 
