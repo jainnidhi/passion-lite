@@ -44,15 +44,30 @@
         ?>
     </div> <!-- /.entry-content -->
     
-     <?php echo '<ul>';
-        $args_list = array(
-        'taxonomy' => 'portfolio_category', // Registered tax name
-        'show_count' => false,
-        'hierarchical' => true,
-        'echo' => '0',
-        );	 
-        echo wp_list_categories($args_list);
-        echo '</ul>'; ?>
+     <p class="portfolio_category">Categories
+     <?php
+
+    $terms = get_the_terms($post->ID, 'portfolio_category');
+    if ($terms && !is_wp_error($terms)) :
+
+        foreach ($terms as $term) {
+            $term_link = get_term_link($term);
+            if (is_wp_error($term_link)) {
+                continue;
+            }
+
+            // We successfully got a link. Print it out.
+            echo '<a href="' . esc_url($term_link) . '">' . $term->name . '</a>';
+           
+        }
+
+        $tax = $term;
+    else :
+        $tax = '';
+        echo $tax;
+    endif;
+
+    ?></p>
     
     <footer class="entry-meta">
         <?php
