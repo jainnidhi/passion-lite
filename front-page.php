@@ -64,7 +64,7 @@ get_header();
             <div class="home-featured clearfix">
                 <div class="home-featured-one grid_4_of_12 col">
                     <?php if ( get_theme_mod('home_featured_one') !='' ) {  ?>
-                     <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_one'); ?>" /></div>
+                     <div class="featured-image"><img src="<?php echo esc_url(get_theme_mod('home_featured_one')); ?>" /></div>
                     <?php } else {  ?>
                      <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" /></div>
                      <?php } ?>
@@ -89,7 +89,7 @@ get_header();
 
                 <div class="home-featured-two grid_4_of_12 col">
                     <?php if ( get_theme_mod('home_featured_two') !='' ) {  ?>
-                     <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_two'); ?>" /></div>
+                     <div class="featured-image"><img src="<?php echo esc_url(get_theme_mod('home_featured_two')); ?>" /></div>
                     <?php } else {  ?>
                      <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature1.jpg" /></div>
                      <?php } ?>
@@ -115,7 +115,7 @@ get_header();
 
                 <div class="home-featured-three grid_4_of_12 col">
                     <?php if ( get_theme_mod('home_featured_three') !='' ) {  ?>
-                     <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_three'); ?>" /></div>
+                     <div class="featured-image"><img src="<?php echo esc_url(get_theme_mod('home_featured_three')); ?>" /></div>
                     <?php } else {  ?>
                      <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature2.jpg" /></div>
                      <?php } ?>
@@ -169,16 +169,16 @@ get_header();
           <div class="testimonials component effect-fade">
               <div class="testimonials-list">
                   <?php if ( get_theme_mod('tslider_one') !='') { ?>
-                  <div id="tslider1"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_theme_mod('tslider_one'); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider1"><a href="#" class="avatar-link"><img alt='' src='<?php echo esc_url(get_theme_mod('tslider_one')); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                   <?php } ?>
                   <?php if ( get_theme_mod('tslider_two') !='') { ?>
-                  <div id="tslider2"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_theme_mod('tslider_two'); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider2"><a href="#" class="avatar-link"><img alt='' src='<?php echo esc_url(get_theme_mod('tslider_two')); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                  <?php } ?>
                   <?php if ( get_theme_mod('tslider_three') !='') { ?>
-                  <div id="tslider3"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_theme_mod('tslider_three'); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider3"><a href="#" class="avatar-link"><img alt='' src='<?php echo esc_url(get_theme_mod('tslider_three')); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                   <?php } ?>
                   <?php if ( get_theme_mod('tslider_four') !='') { ?>
-                  <div id="tslider4"><a href="#" class="avatar-link"><img alt='' src='<?php echo get_theme_mod('tslider_four'); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
+                  <div id="tslider4"><a href="#" class="avatar-link"><img alt='' src='<?php echo esc_url(get_theme_mod('tslider_four')); ?>' class='avatar avatar-65 photo' height='65' width='65' /></a></div>
                   <?php } ?>
                </div>
           </div>
@@ -351,37 +351,37 @@ get_header();
                           <div class="social-links">
                                 <ul>
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
-                                        <li class="passion-fb"><a href="<?php echo get_theme_mod('facebook_link_url'); ?>"></a></li>
+                                        <li class="passion-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('twitter_link_url')) { ?>
-                                        <li class="passion-twitter"><a href="<?php echo  get_theme_mod('twitter_link_url'); ?>"></a></li>
+                                        <li class="passion-twitter"><a href="<?php echo esc_url(get_theme_mod('twitter_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('googleplus_link_url')) { ?>
-                                        <li class="passion-gplus"><a href="<?php echo get_theme_mod('googleplus_link_url'); ?>"></a></li>
+                                        <li class="passion-gplus"><a href="<?php echo esc_url(get_theme_mod('googleplus_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if( get_theme_mod('pinterest_link_url')) { ?>
-                                        <li class="passion-pinterest"><a href="<?php echo get_theme_mod('pinterest_link_url'); ?>"></a></li>
+                                        <li class="passion-pinterest"><a href="<?php echo esc_url(get_theme_mod('pinterest_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('github_link_url')) { ?>
-                                        <li class="passion-github"><a href="<?php echo get_theme_mod('github_link_url'); ?>"></a></li>
+                                        <li class="passion-github"><a href="<?php echo esc_url(get_theme_mod('github_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('youtube_link_url')) { ?>
-                                        <li class="passion-youtube"><a href="<?php echo get_theme_mod('youtube_link_url'); ?>"></a></li>
+                                        <li class="passion-youtube"><a href="<?php echo esc_url(get_theme_mod('youtube_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('dribbble_link_url')) { ?>
-                                        <li class="passion-dribbble"><a href="<?php echo get_theme_mod('dribbble_link_url'); ?>"></a></li>
+                                        <li class="passion-dribbble"><a href="<?php echo esc_url(get_theme_mod('dribbble_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('tumblr_link_url')) { ?>
-                                        <li class="passion-tumblr"><a href="<?php echo get_theme_mod('tumblr_link_url'); ?>"></a></li>
+                                        <li class="passion-tumblr"><a href="<?php echo esc_url(get_theme_mod('tumblr_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('flickr_link_url')) { ?>
-                                        <li class="passion-flickr"><a href="<?php echo get_theme_mod('flickr_link_url'); ?>"></a></li>
+                                        <li class="passion-flickr"><a href="<?php echo esc_url(get_theme_mod('flickr_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('vimeo_link_url')) { ?>
-                                        <li class="passion-vimeo"><a href="<?php echo get_theme_mod('vimeo_link_url'); ?>"></a></li>
+                                        <li class="passion-vimeo"><a href="<?php echo esc_url(get_theme_mod('vimeo_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('linkedin_link_url')) { ?>
-                                        <li class="passion-linkedin"><a href="<?php echo get_theme_mod('linkedin_link_url'); ?>"></a></li>
+                                        <li class="passion-linkedin"><a href="<?php echo esc_url(get_theme_mod('linkedin_link_url')); ?>"></a></li>
                                     <?php } ?>
                                 </ul>
                             </div>
