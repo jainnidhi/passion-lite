@@ -1935,7 +1935,7 @@ single-post .entry-meta{
     width: 15px;
     height: 1px;
     background-color: #000;
-    left:74px;
+    left:112px;
 }
 .post-tags a,
 .post-categories a{
@@ -2223,7 +2223,7 @@ single-post .entry-meta{
 .social-meta a {
     text-decoration: none;
     margin-right: 5px;
-    padding: 9px 7px;
+    padding: 9px 11px;
     border-radius: 100px;
     border: 1px solid;
     background: #fff;
