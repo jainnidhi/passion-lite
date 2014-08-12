@@ -330,6 +330,7 @@ get_header();
        <!-- start home CTA area -->
         <section class="home-cta-area">
                 <div class="home-cta">
+                    <?php if(get_theme_mod('passion_front_cta_check')) { ?>
                      <?php if ( get_theme_mod('cta_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('cta_title')); ?></h3>
                           <?php } else {  ?> <h3><?php esc_html_e('CTA Title', 'passion') ?></h3>
                                <?php } ?>
@@ -347,7 +348,9 @@ get_header();
                     <?php } else {  ?> <?php esc_html_e('Read More', 'passion') ?>
                            <?php } ?></a>
                     </div>
+                    <?php } ?>
                           
+                          <?php if(get_theme_mod('passion_front_social_icon_check')) { ?>
                           <div class="social-links">
                                 <ul>
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
@@ -385,6 +388,9 @@ get_header();
                                     <?php } ?>
                                 </ul>
                             </div>
+                          <?php } ?>
+                          
+                          <?php if(get_theme_mod('passion_front_contact_details_check')) { ?>
                           <div class="contact-details">
                              
                                    <?php if ( get_theme_mod('address_detail') !='' ) {  ?>
@@ -405,7 +411,8 @@ get_header();
                                    <?php } else {  ?> <p id="phone"><?php esc_html_e('0294-678456', 'passion') ?></p>
                                             <?php } ?>
                           
-                        </div>
+                            </div>
+                          <?php } ?>
                           
                           
                 

@@ -753,7 +753,18 @@ function passion_customize_register($wp_customize) {
         'title' => __('Social Icons', 'passion'),
         'priority' => 58,
     ));
-
+    
+    $wp_customize->add_setting('passion_front_social_icon_check', array(
+        'default' => 0,
+        'sanitize_callback' => 'passion_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('passion_front_social_icon_check', array(
+        'label' => __('Display Social Icons on Front Page', 'passion'),
+        'section' => 'social_icon_setting',
+        'priority' => 1,
+        'type' => 'checkbox',
+    ));
+    
     // link url
     $wp_customize->add_setting('facebook_link_url', array('default' => __('', 'passion'),
         'sanitize_callback' => 'sanitize_text_field',
@@ -764,7 +775,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Facebook URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'facebook_link_url',
-        'priority' => 1,
+        'priority' => 2,
     ));
 
     // link url
@@ -777,7 +788,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Twitter URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'twitter_link_url',
-        'priority' => 2,
+        'priority' => 3,
     ));
 
     // link url
@@ -790,7 +801,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Google Plus URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'googleplus_link_url',
-        'priority' => 3,
+        'priority' => 4,
     ));
 
     // link url
@@ -803,7 +814,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Pinterest URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'pinterest_link_url',
-        'priority' => 4,
+        'priority' => 5,
     ));
 
     // link url
@@ -816,7 +827,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Github URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'github_link_url',
-        'priority' => 5,
+        'priority' => 6,
     ));
 
     // link url
@@ -829,7 +840,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Youtube URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'youtube_link_url',
-        'priority' => 6,
+        'priority' => 7,
     ));
     
     $wp_customize->add_setting('dribbble_link_url', array('default' => __('', 'passion'),
@@ -841,7 +852,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Dribble URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'dribbble_link_url',
-        'priority' => 7,
+        'priority' => 8,
     ));
     
     $wp_customize->add_setting('tumblr_link_url', array('default' => __('', 'passion'),
@@ -853,7 +864,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Tumblr URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'tumblr_link_url',
-        'priority' => 8,
+        'priority' => 9,
     ));
     
     $wp_customize->add_setting('flickr_link_url', array('default' => __('', 'passion'),
@@ -865,7 +876,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Flickr URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'flickr_link_url',
-        'priority' => 9,
+        'priority' => 10,
     ));
     
     $wp_customize->add_setting('vimeo_link_url', array('default' => __('', 'passion'),
@@ -877,7 +888,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Vimeo URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'vimeo_link_url',
-        'priority' => 10,
+        'priority' => 11,
     ));
     
     $wp_customize->add_setting('linkedin_link_url', array('default' => __('', 'passion'),
@@ -889,13 +900,24 @@ function passion_customize_register($wp_customize) {
         'label' => __('Linkedin URL', 'passion'),
         'section' => 'social_icon_setting',
         'settings' => 'linkedin_link_url',
-        'priority' => 11,
+        'priority' => 12,
     ));
 
     // Add new section for Home CTA settings
     $wp_customize->add_section('home_cta_setting', array(
         'title' => __('Footer CTA', 'passion'),
         'priority' => 57,
+    ));
+    
+    $wp_customize->add_setting('passion_front_cta_check', array(
+        'default' => 0,
+        'sanitize_callback' => 'passion_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('passion_front_cta_check', array(
+        'label' => __('Show CTA on Front Page', 'passion'),
+        'section' => 'home_cta_setting',
+        'priority' => 1,
+        'type' => 'checkbox',
     ));
     
     $wp_customize->add_setting('passion_cta_background_color', array(
@@ -908,7 +930,7 @@ function passion_customize_register($wp_customize) {
         'label' => 'CTA Background color',
         'section' => 'home_cta_setting',
         'settings' => 'passion_cta_background_color',
-        'priority' => 1,
+        'priority' => 2,
             )
     ));
     
@@ -921,7 +943,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Title', 'passion'),
         'section' => 'home_cta_setting',
         'settings' => 'cta_title',
-        'priority' => 2,
+        'priority' => 3,
     ));
 
     $wp_customize->add_setting('cta_text', array('default' => '',
@@ -933,7 +955,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('CTA Text', 'passion'),
         'section' => 'home_cta_setting',
         'settings' => 'cta_text',
-        'priority' => 3,
+        'priority' => 4,
     )));
 
 
@@ -947,7 +969,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Link Text', 'passion'),
         'section' => 'home_cta_setting',
         'settings' => 'home_cta_link_text',
-        'priority' => 4,
+        'priority' => 5,
     ));
 
     // link url
@@ -960,7 +982,7 @@ function passion_customize_register($wp_customize) {
         'label' => __('Link URL', 'passion'),
         'section' => 'home_cta_setting',
         'settings' => 'home_cta_link_url',
-        'priority' => 5,
+        'priority' => 6,
     ));
 
 
@@ -1219,7 +1241,18 @@ function passion_customize_register($wp_customize) {
         'title' => __('Contact Details', 'passion'),
         'priority' => 59,
     ));
-
+    
+     $wp_customize->add_setting('passion_front_contact_details_check', array(
+        'default' => 0,
+        'sanitize_callback' => 'passion_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('passion_front_contact_details_check', array(
+        'label' => __('Display Contact Details on Front Page', 'passion'),
+        'section' => 'contact_setting',
+        'priority' => 1,
+        'type' => 'checkbox',
+    ));
+    
     $wp_customize->add_setting('contact_email', array(
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',

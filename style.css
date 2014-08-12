@@ -2666,6 +2666,7 @@ div.gform_wrapper .ginput_complex label {
     margin: 0 auto;
     padding: 30px 0;
     color: #fff;
+    border-bottom:1px solid #eee;
 }
 
 .site-footer .widget-title { 
@@ -2684,7 +2685,6 @@ div.gform_wrapper .ginput_complex label {
 .site-footer .widget li {
     padding-bottom: 10px; 
     margin-bottom: 5px;
-    border-bottom: dotted 1px #fff; 
 }
 .site-footer a { 
     color: #fff;
@@ -2726,7 +2726,7 @@ div.gform_wrapper .ginput_complex label {
 }
 
 .smallprint a { 
-    color: #111;
+    color: #fff;
 }
 
 .smallprint a:visited { 
@@ -2735,11 +2735,6 @@ div.gform_wrapper .ginput_complex label {
 
 .smallprint a:hover { 
     color: #eee;
-}
-
-.footer-wrap{
-    background:#eee;
-    border-top: solid 3px #111;
 }
 
 .footer-extras{
@@ -2752,7 +2747,7 @@ div.gform_wrapper .ginput_complex label {
 }
 
 .footer-extras .main-navigation a{
-    color:#111;
+    color:#fff;
 }
 
 .footer-extras .footer-wrap-menu{
@@ -2801,23 +2796,6 @@ div.gform_wrapper .ginput_complex label {
     font-weight: 700;
     letter-spacing: 0px;
     text-transform:uppercase;
-}
-
-.site-footer li:before{
-    content: "\f054";
-    display: block;
-    float: left;
-    font-family: "FontAwesome";
-    padding: 5px;
-    font-size: 12px;
-}
-
-.site-footer li:hover{
-    padding-left:20px !important;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -khtml-transition: all 0.3s ease;
-    -moz-transitiokn: all 0.3s ease;
 }
 
 .sidebar .widget li:before {
