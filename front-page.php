@@ -27,7 +27,7 @@ get_header();
                      <h2 class="slider-title animated fadeInLeftBig"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'passion') ?></a></h2>
                           <p class="animated fadeInRightBig"><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'passion') ?> </p>
                           <a class="slider-button animated fadeInUp" href="#">
-                            <?php esc_html_e('Start Building Your Website Now', 'passion') ?>
+                            <?php esc_html_e('Read More', 'passion') ?>
                         </a>
                     </div>
                 </div>
@@ -71,13 +71,13 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_one') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_one')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Products', 'passion') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Trends To Watch', 'passion') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_one') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_one')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Showcase your best quality products on home page to grab visitor&rsquo;s attention.', 'passion') ?> </p>
+                          <p><?php esc_html_e('I cannot pretend to be impartial about the colours. I rejoice with the brilliant ones, and am genuinely sorry for the poor browns.', 'passion') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_one_link_url') !='' ) { echo esc_url(get_theme_mod('home_one_link_url')); } ?>">
@@ -96,13 +96,13 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_two') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_two')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'passion') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Glossary Of Nonprofit', 'passion') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_two') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_two')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show your multiple services that will explore your website among the audience.', 'passion') ?> </p>
+                          <p><?php esc_html_e('The past is prophetic in that it asserts loudly that wars are poor chisels for carving out peaceful tomorrows.', 'passion') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_two_link_url') !='' ) { echo esc_url(get_theme_mod('home_two_link_url')); } ?>">
@@ -122,13 +122,13 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_three') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_three')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Clients', 'passion') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('A Wave Of The Future', 'passion') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_three') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_three')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'passion') ?> </p>
+                          <p><?php esc_html_e('How poor are they that have not patience! What wound did ever heal but by degrees?', 'passion') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_three_link_url') !='' ) { echo esc_url(get_theme_mod('home_three_link_url')); } ?>">

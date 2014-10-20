@@ -1109,7 +1109,6 @@ select {
 
 .slider-wrapper{
     background-image:url('assets/images/tumblr.jpg');
-    min-height:570px;
     background-attachment: fixed; 
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -3413,7 +3412,7 @@ img#wpstats {
 }
 .slicknav_nav ul {
     padding:0;
-    margin:0 0 0 20px;
+    margin:0 0 0 0px;
 }
 .slicknav_nav .slicknav_item {
     padding:5px 10px;
@@ -3769,15 +3768,17 @@ img#wpstats {
         width:100%;
         text-align:center;
     }
+    
+    .main-navigation li.menu-parent-item > a:after{
+        display:none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
 
-    .featured-content h2{
-        font-size:30px;
+    .slider-wrapper .featured-content{
+        min-height:0;
     }
-
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -4061,7 +4062,7 @@ img#wpstats {
     }
 
     .members-wrap img{
-        width:200px;
+        width:100%;
     }
 
     .wpcf7 input[type="text"],
